@@ -1,0 +1,9 @@
+<section id="showPost">
+    <h2>hi <?=htmlspecialchars ($_SESSION['name'])?></h2>
+    <article>
+        <p>Your bee's gratitudes for :<span> <?=substr(htmlspecialchars($value['date_publication']),0,10)?></span></p>
+        <p><?=htmlspecialchars($value['post'])?></p>
+        <img src="css/images/avatar.png" alt="">
+    </article>  
+    <a href="index.php">Home</a>
+</section>

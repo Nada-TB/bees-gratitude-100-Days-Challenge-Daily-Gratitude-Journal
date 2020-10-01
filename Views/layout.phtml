@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/images/avatar.png" type="image/x-icon">
+    <title><?= $title?></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <?php if(empty($_SESSION)) : ?>
+            <h1>welcome to daily bee's gratitude website</h1>
+        <?php endif; ?>   
+    </header>
+    <main>
+        <?php include $template .".phtml" ?>
+    </main>
+    <footer>
+        <small>
+            <p>Copyright &copy August 2020 Nada TEBBA. All rights reserved</p>
+        </small>
+    </footer>
+    <script type='module' src="js/app.js"></script>
+</body>
+</html>

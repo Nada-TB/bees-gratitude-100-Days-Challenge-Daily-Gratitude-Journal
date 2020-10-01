@@ -1,0 +1,35 @@
+<section id="about">
+    <img src="css/images/avatar.png" alt="bee" >
+    <p>learn about us</p>
+    <article>
+        <p>We are continually surrounded by bad news, negativity, and anxiety!</p>
+        <p> What if we take five minutes every day to write down our tiny gratitudes?</p> 
+        <p>It doesn't have to be a gigantesque accomplishment, 
+        <span>just those little things</span> that spread joy throughout the darkness.</p>
+        <p>A warm hug, a delicious cupcake, or maybe catching-up your bus even after a late wake-up!</p>
+        <p>Sign up and offer yourself 100 days of daily bee's gratitude.</p>
+    </article>
+</section>       
+<section class='homePage'>
+    <form id="signUp" action="index.php?path=sign_up" method='post'>
+        <?php if(isset($_GET['error'])):?>
+            <span><?=htmlspecialchars($_GET['error'])?></span>
+        <?php endif; ?>
+        <label >sign up</label>
+        <input type="text" name="name" placeholder='enter your name' required/>
+        <input type="email" name="email" placeholder='enter your email' required/>
+        <input type="password" name='password' placeholder="enter your password" required/>
+        <button>sign up</button>
+    </form>
+    <form id="login" action="index.php?path=login" method='post' >
+    <?php if(isset($_GET['message'])==true):?>
+        <span><?= htmlspecialchars($_GET['message'])?>, you can login now</span>
+    <?php endif;?>
+        <span id='message'></span>
+        <label >login</label>
+        <input type="email" name='email'  placeholder=' enter your mail' required>
+        <input type="password" name="password" placeholder='enter your password' required>
+        <a href="forgotten_password" target="_blank" rel="noopener noreferrer">you have forgotten your password click here</a>
+        <button>login</button>
+    </form>
+</section>

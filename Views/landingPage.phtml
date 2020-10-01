@@ -1,0 +1,43 @@
+<section id="landingPage">
+    <article id="profil">
+            <img src=<?=pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_DIRNAME).htmlspecialchars($_SESSION['avatar'])?> alt="avatar">
+            <span><?=htmlspecialchars($_SESSION['name'])?></span>
+            <a href="">update profil</a>
+            <a href="delete_account">delete account</a>
+            <a href="log_out">log out</a>
+    </article>
+    <article id="updateProfil">  
+        <form method="post"  enctype="multipart/form-data">
+            <legend></legend>
+            <input type="text" name="name" value= <?=htmlspecialchars($_SESSION['name'])?> >
+            <input type="email" name="email"  value= <?=htmlspecialchars($_SESSION['email'])?>>
+            <input type="file" name="avatar">
+            <input type="password" name="oldPassword" placeholder="Enter your current password" >
+            <input type="password" name="password" placeholder="Enter your new password" >
+            <button type="submit">update</button>
+        </form>       
+    </article>
+    <article>
+        <h2>Hi <?=htmlspecialchars($_SESSION['name'])?>, How was your day <img src="css/images/avatar.png">? </h2>
+        <p>quote of the day : <span id='quote'></span></p>
+        <p>you have joined us on : <?=substr(htmlspecialchars($_SESSION['date_creation_account']),0,10)?></p>
+        <?php if(!empty($posts)) : ?>
+            <h3>here is your bee's  daily gratitude list... </h3>
+            <p>Click the feather to write your gratitude(s) of the day </p>
+            <?php foreach ($posts as $post): ?>
+            <div>
+                <p><?=substr(htmlspecialchars($post['date_publication']), 0, 10)?></p>
+                <p class="posts"><?=substr(htmlspecialchars($post['post']), 0, 100)?></p>
+                <a href="index.php?path=show_post&&id=<?=intval($post['id'])?>" target="_blank" rel="noopener noreferrer">show me</a>
+            </div>
+            <?php endforeach; ?>   
+        <?php else: ?>
+        <p>You haven't started your bee's gratitude diary yet! Do you want to start now?</p>
+        <p>bee's gratitude offers you 100 days of gratitude, everyday, take a few minutes and write your gratitude(S)</p>   
+        <p>Click the feather to start and spread gratitude <a href="write_post"><i class="fas fa-feather-alt"></i></a></p>
+        
+        <?php endif; ?>
+    </article>
+    <div id="write"><a href="write_post" title=" write your gratitude"><i class="fas fa-feather-alt"></i></a></div>
+   
+<section>

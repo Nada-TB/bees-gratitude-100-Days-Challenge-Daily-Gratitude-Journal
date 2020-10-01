@@ -1,0 +1,7 @@
+
+ErrorDocument 404 /bees-gratitude/errors/error.html
+ErrorDocument 500 /bees-gratitude/errors/error.html
+Options +FollowSymLinks
+RewriteEngine On 
+RewriteRule	^home$ index.php [L]
+RewriteRule ^([a-zA-Z_]+)$ index.php?path=$1 [L]
