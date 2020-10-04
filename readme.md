@@ -1,6 +1,6 @@
 # The bee's gratitude website :
 
-### Link:https://bees-gratitude.herokuapp.com/  
+### Link: https://bees-gratitude.herokuapp.com/  
 ## if you want to explore the website as visitor use:
 * email: visitor@example.com 
 * password: visitor21#
@@ -34,4 +34,17 @@
  * Implement a js function that styles the fetched database contents on load.
 
 ## Programming concepts applied :
-
+CSS | JavaScript | PHP| Postgres
+-----|--------|----|-----|
+GRID |Modules ES6|MVC|create database
+FLEXBOX|AJAX|OOP|database queries
+animations|JSON|superglobals|SQL Data Types
+Responsive design|classes|PHP include|SQL Dates
+||regex|array methods|SQL FOREIGN KEY
+||arrays methods|PHP filters|SQL Joins
+|| string methods|PHP file|SQL PRIMARY KEY
+||date|PHP sessions||
+||formData object|PHP PDO|
+||window object|time()|
+||files|PHP mail()|
+|||regex|
