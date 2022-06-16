@@ -1,6 +1,11 @@
 # The bee's gratitude website :
 
 ### Link: https://bees-gratitude.herokuapp.com/  
+
+## Demo
+
+https://user-images.githubusercontent.com/50797024/174048866-33ae403d-86d4-4477-aa01-bb81f9e2dda6.mp4
+
 ## if you want to explore the website as visitor use:
 * email: visitor@example.com 
 * password: visitor21#
