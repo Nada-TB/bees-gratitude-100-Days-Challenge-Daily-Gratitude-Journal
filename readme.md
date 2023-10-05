@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/50797024/174048866-33ae403d-86d4-4477-
 ![sitemap](bees-gratitude.png)
 
 ## Development process :
- * This is a dynamic website with authentification that allows the user to keep a daily journal of gratitude:
+ * This is a dynamic website with authentication that allows the user to keep a daily journal of gratitude:
    - It's limited to 50 accounts, 100 posts per account.
    - The user can add only one post per day.
  * Build a wireframe design of the website for different devices.
