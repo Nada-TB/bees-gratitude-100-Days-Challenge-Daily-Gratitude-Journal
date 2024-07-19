@@ -123,9 +123,6 @@ Locally:
 
 Open a web browser.
 Navigate to http://localhost/project-directory-name (replace project-directory-name with the actual name of your project directory).
-Online:
-
-Visit the deployed version of the application here (replace # with the actual link to your deployed application).
 
 ## Features
 
