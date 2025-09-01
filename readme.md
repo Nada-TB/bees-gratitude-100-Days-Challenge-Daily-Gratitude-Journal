@@ -26,10 +26,6 @@ I have developed a robust web application aimed at empowering users to maintain 
 
 https://user-images.githubusercontent.com/50797024/174048866-33ae403d-86d4-4477-aa01-bb81f9e2dda6.mp4
 
-### Live Demo
-
-Check out the live demo [here](https://your-demo-link.com).
-
 ### Sitemap
 
 ```plaintext
