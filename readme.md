@@ -143,8 +143,6 @@ Certainly! Let's revise the features to be more comprehensive and concise:
 
 ## Technologies Used
 
-Great! Let's structure the **Technologies Used** section based on the technologies, frameworks, and concepts you've listed:
-
 ### 8. Technologies Used
 
 - **Frontend**:
@@ -205,9 +203,7 @@ your-project/
 - Gratitude Social Media Platform: Expand the functionality to allow users to share their gratitude entries publicly, follow others, and engage in a social network centered around positivity and gratitude.
 - Notification System: Implement a notification feature to alert users about new entries, likes, comments, and other social interactions.
 
-## Contact
-
-Provide your contact information for questions or feedback.
+## Contact:
 
 - GitHub: [Nada-TB](https://github.com/Nada-TB)
 
